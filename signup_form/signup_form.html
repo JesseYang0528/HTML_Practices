@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form action="#" method = 'post'>
+        <h1>Sign Up</h1>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="firstName">Firse Name</label>
+            <input class = 'textInput' type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+            <label for="lastName">Last Name</label>
+            <input class = 'textInput' type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+            <label for="userName">User Name</label>
+            <input class = 'textInput' type="text" name="userName" id="userName" placeholder="Enter your user name" required>
+            <label for="email">Email</label>
+            <input class = 'textInput' type="email" name="email" id="email" placeholder="Enter your email" required autocomplete="off">
+            <label for="password">Password</label>
+            <input class = 'textInput' type="password" name="password" id="password" placeholder="Enter your password" required>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="date">Brith Date</label>
+            <input class = 'textInput' type="date" name="date" id="date" required>
+
+            <label for="gender">Gender</label><br />
+            <input type="radio" id = 'male' name = 'gender' />
+            <label for="male">Male</label>
+            <br>
+
+            <input type="radio" id = 'female' name = 'gender' />
+            <label for="female">Female</label>
+            <br>
+
+            <input type="radio" id = 'other' name = 'gender' />
+            <label for="other">Other</label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="australia" selected>Australia</option>
+                <option value="china">China</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <input type="checkbox" id = 'terms' name = 'terms' required/>
+            <label for="terms">I agree to the terms and conditions</label>
+            <button type = 'submit'>Sign Up</button>
+        </fieldset>
+    </form>
+</body>
+</html>

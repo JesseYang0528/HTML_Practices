@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="assets/styles/common.css">
+    <script src="assets/js/timer.js"></script>
+</head>
+<body>
+    <div class = 'main'>
+        <h1>INFS 3202/7202 - Quiz 1</h1>
+        <hr>
+
+        <h3>Instructions</h3>
+        <p>This is an <span>open-book</span> exam and you are allowed to use resources from the Internet<sup>*</sup>, lecture notes, and yourself.</p>
+        <p>Please have your student card ready on the table. Attendance will be checked.</p>
+        <!-- <p class = 'inline_block'>Please download the setup script to your <span>home folder </span><span class = 'code'>~</span>. Once you log in using ssh, you will find yourself in this folder. 
+            Or you can use <span class = 'code'>cd ~</span> to navigate to home folder.</p> -->
+        <p>If you haven't had the mock quiz set up, you need to follow the mock's instructions to install the mock quiz first.</p>
+        <p class = 'pb_10'>This is an <span>individual</span> assessment. <span>Seeking helps from others will be treated as cheating</span>.</p>
+
+        <hr>
+
+        <h3 class = 'mt_4px'><sup>*</sup>Restrictions</h3>
+        <p class="emphasis pb_10">NO ChatGPT, NO GitHub Copilot, NO AI Tools<br />
+            <span class = 'p'>Once discovered, it will be treated as cheating and will be reported to the University</span>
+        </p>
+
+        <hr>
+
+        <h3>Submission (<span>You Only Have ONE Chance</span>)</h3>
+        <!-- <p>Please submit your answers by the end of this prac session as the submission portal will be closed at that time.</p> -->
+        <p>It's highly recommended to use the provided script to generate the ZIP file. Please download the ZIP to your device either using VSCode 
+            or by running the following command in your local terminal (not the one in VSCode) <br />
+            <span class="code">scp sxxxxxxx@infs3202-xxxxxxxx.zones.eait.uq.edu.au:/var/www/htdocs/mock/sxxxxxxx_quiz1.zip ./</span>.
+        </p>
+        <!-- <p>Please submit your ZIP file by the end of the Prac Session. <span>Multiple submissions is not allowed</span>. -->
+        </p>
+        <div class = 'files'>
+            <p class = 'pb_10 length'>Files needed: </p>
+            <ul>
+                <li class = 'pb_10'>Router <span class="code">Routes.php</span></li>
+            </ul>
+            <ul>
+                <li class = 'pb_10'>Controller <span class="code">Quiz1.php</span></li>
+            </ul>
+            <ul>
+                <li class = 'pb_10'>Views <span class="code">input.php</span> and <span class="code">output.php</span></li>
+            </ul>
+        </div>
+
+        <hr>
+        <div class = 'title_time'>
+            <h3>Timer</h3>
+            <form method = 'post' name = 'time' target = 'hidden' >
+                <label for="input_time">Due Time:</label>
+                <input type="text" class = 'input' id="input_time" name="target_time" autocomplete="off">
+                <input type = 'button'id = 'button_start' class = 'button button_start' onclick="startTimer()" value = 'Start'>
+                <input type="button" id = 'button_stop' class=" button button_stop button_disabled" onclick = 'stopTimer()' value = 'Stop'>
+                <input type="button" id = 'button_reset' class="button button_reset button_disabled" onclick = 'resetTimer()' value = 'Reset'>
+            </form>
+            <iframe id = 'hidden' name = 'hidden' style = 'display: none;'></iframe>
+        </div>
+        
+        <div class="clock">
+            <p class="times" id = 'hour'>00</p>
+            <p class="sep">:</p>
+            <p class="times" id = 'minute'>00</p>
+            <p class="sep">:</p>
+            <p class="times" id = 'second'>00</p>
+        </div>
+        <div class="bar">
+            <div id = 'bar' class="progress"></div>
+        </div>
+        <div class = 'copyright'>
+            <small>&copy; Copyright: <a href="https://github.com/JesseYang0528">Hao Yang (Jesse Yang)</a>.</small> 
+            <small>Last modification: 1<sup>st</sup> Apr, 2023</small>
+        </div>
+    </div>
+</body>
+</html>
