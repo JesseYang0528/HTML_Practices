@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Enhanced Dot Digital-7';
-    src: url('./font/enhanced_dot_digital-7.ttf') format('truetype');
+    src: url('../font/enhanced_dot_digital-7.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Din Alternate';
-    src: url('./font/DIN-RegularAlternate-2.otf') format('opentype');
+    src: url('../font/DIN-RegularAlternate-2.otf') format('opentype');
 }
 
 html {
