@@ -16,7 +16,7 @@ This repository contains some of my personal demos for HTML, CSS, and JavaScript
       - [Grid cards](#grid-cards)
   - [Functional Projects](#functional-projects)
     - [Plain HTML, CSS, and JavaScript](#plain-html-css-and-javascript-1)
-      - [Exam instruction page with a buil-in timer](#exam-instruction-page-with-a-buil-in-timer)
+      - [Exam instruction page with a built-in timer](#exam-instruction-page-with-a-built-in-timer)
 
 ## Small demos
 ### Plain HTML, CSS, and JavaScript
@@ -35,10 +35,10 @@ This is a simple demo of CSS grid. In this demo, 4 cards are displayed on the pa
 
 ## Functional Projects
 ### Plain HTML, CSS, and JavaScript
-#### Exam instruction page with a buil-in timer
+#### Exam instruction page with a built-in timer
 [Available Online](https://infs3202-61299237.uqcloud.net/)
 
-This page was designed for UQ course INFS3202/7202 Web Information Systems. Since I am working as a tutor for this course in this semester, I created this page for, first, practising my HTML, CSS and JavaScript skills, and second, showing the instructions and a working timer to students. This web page has a integreted timer. The timer takes the target time as input, and will then automatically calculate the time span between current time and given time and start counting. A progress bar is also used to show the time span. Target time can be updated at anytime and the timer and progress bar will be updated accordingly. The timer will stop counting when the target time is reached. Timer can be stopped and resumed at anytime. Note that the target time will be postponed accordingly when the timer is stopped. For instance, if the target time is 10:00:00 and the timer is stopped for 1 minute, the target time will be 10:01:00 after it is resumed. Timer can be reset at anytime. 
+This page was designed for UQ course INFS3202/7202 Web Information Systems. Since I am working as a tutor for this course in this semester, I created this page for, first, practising my HTML, CSS and JavaScript skills, and second, showing the instructions and a working timer to students. This web page has an integreted timer. The timer takes the target time as input, and will then automatically calculate the time span between current time and given time and start counting. A progress bar is also used to show the time span. Target time can be updated at anytime and the timer and progress bar will be updated accordingly. The timer will stop counting when the target time is reached. Timer can be stopped and resumed at anytime. Note that the target time will be postponed accordingly when the timer is stopped. For instance, if the target time is 10:00:00 and the timer is stopped for 1 minute, the target time will be 10:01:00 after it is resumed. Timer can be reset at anytime. 
 
 ----
 **This repository is being frequently updated. More demos and projects will be added in the future.**
